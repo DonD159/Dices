@@ -1,0 +1,49 @@
+/* Styling each Die */
+.Diec{ 
+    font-size:10em; 
+    padding:0.25em; 
+    color:rgb(36, 28, 85); 
+} 
+
+.Diec:hover{ 
+  color:rgb(216, 49, 49); 
+} 
+
+
+    
+  /* Applying Animation */
+  #Die-shaking{ 
+    animation-name:wobble; 
+    animation-duration: 1s; 
+  } 
+    
+  /* Setting Animation effect to the  
+     dice using css keyframe */
+  @keyframes wobble { 
+    from { 
+      transform: translate3d(0, 0, 0); 
+    } 
+    15% { 
+      transform: translate3d(-25%, 0, 0)  
+                 rotate3d(0, 0, 1, -10deg); color: crimson;
+    } 
+    30% { 
+      transform: translate3d(20%, 0, 0)  
+                 rotate3d(0, 0, 1, 38deg); color: rgb(13, 128, 32);
+    } 
+    45% { 
+      transform: translate3d(-15%, 0, 0) 
+                 rotate3d(0, 0, 1, -10deg); color: rgb(144, 233, 159);
+    } 
+    60% { 
+      transform: translate3d(10%, 0, 0)  
+                 rotate3d(0, 0, 1, 38deg); color: rgb(148, 47, 168);
+    } 
+    75% { 
+      transform: translate3d(-5%, 0, 0)  
+                 rotate3d(0, 0, 1, -1deg); color: rgb(233, 222, 77);
+    } 
+    to { 
+      transform: translate3d(0, 0, 0); 
+    } 
+  }

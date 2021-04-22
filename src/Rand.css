@@ -1,0 +1,75 @@
+*{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.RollDice{ 
+    display: flex; 
+    flex-flow: column nowrap; 
+    min-height: 100vh; 
+  } 
+
+  .total{
+    text-align: center;
+    
+  }
+
+  .Dices{
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 35px;
+  }
+
+  .Diel{
+    text-align: center;
+    color: rgb(255 108 128);
+  }
+
+  .Die2{
+    text-align: center;
+    color: rgb(255 108 128);
+  }
+
+  .Diceone{
+    margin: 0;
+
+  }
+  .Dicetwo{
+    margin: 0;
+    margin-left: 113px;
+  }
+    
+  /* Shows each dice in one row */
+  .RollDice-container{ 
+    display: flex; 
+    justify-content: center; 
+    align-content: center; 
+  } 
+  /* Stylling rolldice button */
+  .RollDice button{ 
+    width:15em; 
+    padding:1.5em; 
+    border: 0px; 
+    border-radius: 10px; 
+    color:white; 
+    background-color:rgb(37, 39, 85); 
+    margin-top: 3em; 
+    align-self: center; 
+  } 
+    
+  /* Setting hover effect on button */
+  .RollDice button:hover{ 
+    cursor: pointer; 
+  } 
+    
+  .rolling{ 
+    border: 1px; 
+    border-radius: 10px; 
+    background-color:rgb(4, 99, 11) !important; 
+    opacity:0.7;
+  } 
+
+  .Double{
+    text-align: center;
+    color: rgb(98, 73, 176);
+  }
